@@ -50,6 +50,8 @@ FB.getLoginStatus(function(response) {
 
 <h1>Hello,world</h1>
 
+<a href="index2.php">aaaaaaaaa</a>
+
 
   </body>
 </html>
