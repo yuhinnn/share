@@ -46,6 +46,8 @@ FB.getLoginStatus(function(response) {
    }(document, 'script', 'facebook-jssdk'));
 </script>
 
+<h1 id="fb-welcome"></h1>
+
 <h1>Hello,world</h1>
 
 
