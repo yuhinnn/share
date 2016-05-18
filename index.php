@@ -52,6 +52,30 @@ FB.getLoginStatus(function(response) {
 
 <a href="index2.php">aaaaaaaaa</a>
 
+<script type="text/javascript">
+function funcAdd1() {
+    document.getElementById( "sample" ).innerHTML = 
+        parseInt( document.getElementById( "sample" ).firstChild.nodeValue ) + 1;
+}
+function funcAdd2() {
+    document.getElementById( "sample" ).innerHTML = 
+        parseInt( document.getElementById( "sample" ).firstChild.nodeValue ) + 2;
+}
+function funcAdd3() {
+    document.getElementById( "sample" ).innerHTML = 
+           parseInt( document.getElementById( "sample" ).firstChild.nodeValue ) + 3;
+   }
+</script>
+
+
+<div id="sample">1</div>
+<div id="sampleButton">
+      <buton onclick="funcAdd1()">１を足す</button>
+      <buton onclick="funcAdd1()">2を足す</button>
+      <buton onclick="funcAdd1()">3を足す</button>
+
+</div>
+
 
   </body>
 </html>
