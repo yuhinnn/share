@@ -76,6 +76,12 @@ function funcAdd3() {
 
 </div>
 
+<a href="index3.php">index3へ移動</a>
+ <a href="index5.php">index5へ移動</a>
+  <a href="index6.php">index6へ移動</a>
+     
+
+
 
   </body>
 </html>
