@@ -80,7 +80,7 @@ function funcAdd3() {
  <a href="index5.php">index5へ移動</a>
   <a href="index6.php">index6へ移動</a>
    <a href="index8.php">index8へ移動</a>
-     
+   <a href="index9.php">index9へ移動</a>
 
 
   </body>
