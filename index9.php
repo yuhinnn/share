@@ -23,7 +23,7 @@
             <p>質問1.</p>
             <p>グループディスカッションにおけるあなたの役割は？</p>
             <ul>
-              <li><input type="radio" name="q0" value="officer" checked>リーダー</li>
+              <li><input name="q0" value="officer" checked>リーダー</li>
               <li><input type="radio" name="q0" value="scholar">アイデアマン</li>
               <li><input type="radio" name="q0" value="king">ムードメーカ</li>
               <li><input type="radio" name="q0" value="craftsman">監視役</li>
