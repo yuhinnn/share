@@ -5,45 +5,45 @@
     <title>share</title>
   </head>
   <body>
-    <script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '178976645831726',
+<script>
+window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '178976645831726',
       xfbml      : true,
       version    : 'v2.6'
-    });
+  });
 
-    // ADD ADDITIONAL FACEBOOK CODE HERE
-    function onLogin(response) {
-  if (response.status == 'connected') {
-    FB.api('/me?fields=first_name', function(data) {
-      var welcomeBlock = document.getElementById('fb-welcome');
-      welcomeBlock.innerHTML = 'こんにちは ' + data.first_name + '!';
-    });
+  // ADD ADDITIONAL FACEBOOK CODE HERE
+  function onLogin(response) {
+    if (response.status == 'connected') {
+      FB.api('/me?fields=first_name', function(data) {
+        var welcomeBlock = document.getElementById('fb-welcome');
+        welcomeBlock.innerHTML = 'こんにちは ' + data.first_name + '!';
+      });
+    }
   }
-}
 
-FB.getLoginStatus(function(response) {
-  // Check login status on load, and if the user is
-  // already logged in, go directly to the welcome message.
-  if (response.status == 'connected') {
-    onLogin(response);
-  } else {
-    // Otherwise, show Login dialog first.
-    FB.login(function(response) {
+  FB.getLoginStatus(function(response) {
+    // Check login status on load, and if the user is
+    // already logged in, go directly to the welcome message.
+    if (response.status == 'connected') {
       onLogin(response);
-    }, {scope: 'user_friends, email'});
-  }
-});
-  };
+    } else {
+      // Otherwise, show Login dialog first.
+      FB.login(function(response) {
+        onLogin(response);
+      }, {scope: 'user_friends, email'});
+    }
+  });
+};
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
+(function(d, s, id){
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
 </script>
 
 <h1 id="fb-welcome"></h1>
@@ -54,17 +54,17 @@ FB.getLoginStatus(function(response) {
 
 <script type="text/javascript">
 function funcAdd1() {
-    document.getElementById( "sample" ).innerHTML = 
-        parseInt( document.getElementById( "sample" ).firstChild.nodeValue ) + 1;
+  document.getElementById( "sample" ).innerHTML = 
+    parseInt( document.getElementById( "sample" ).firstChild.nodeValue ) + 1;
 }
 function funcAdd2() {
-    document.getElementById( "sample" ).innerHTML = 
-        parseInt( document.getElementById( "sample" ).firstChild.nodeValue ) + 2;
+  document.getElementById( "sample" ).innerHTML = 
+    parseInt( document.getElementById( "sample" ).firstChild.nodeValue ) + 2;
 }
 function funcAdd3() {
-    document.getElementById( "sample" ).innerHTML = 
-           parseInt( document.getElementById( "sample" ).firstChild.nodeValue ) + 3;
-   }
+  document.getElementById( "sample" ).innerHTML = 
+    parseInt( document.getElementById( "sample" ).firstChild.nodeValue ) + 3;
+}
 </script>
 
 
@@ -82,7 +82,7 @@ function funcAdd3() {
    <a href="index8.php">index8へ移動</a>
    <a href="index9.php">index9へ移動</a>
    <a href="index10.php">index10へ移動</a>
-   
+   <a href="randtest.php">randtestへ移動</a>
 
   </body>
 </html>
